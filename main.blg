@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: lcbb.bib
+Repeated entry---line 513 of file lcbb.bib
+ : @article{bailey2006primate
+ :                           ,
+I'm skipping whatever remains of this entry
+You've used 22 entries,
+            1791 wiz_defined-function locations,
+            855 strings with 15052 characters,
+and the built_in function-call counts, 6144 in all, are:
+= -- 528
+> -- 345
+< -- 3
++ -- 123
+- -- 101
+* -- 527
+:= -- 998
+add.period$ -- 67
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 223
+empty$ -- 547
+format.name$ -- 101
+if$ -- 1311
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 22
+newline$ -- 113
+num.names$ -- 22
+pop$ -- 30
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 97
+stack$ -- 0
+substring$ -- 517
+swap$ -- 44
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 63
+width$ -- 24
+write$ -- 246
+(There was 1 error message)

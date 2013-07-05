@@ -1,0 +1,137 @@
+\begin{thebibliography}{10}
+
+\bibitem{eichler2001}
+Evan~E Eichler.
+\newblock Recent duplication, domain accretion and the dynamic mutation of the
+  human genome.
+\newblock {\em TRENDS in Genetics}, 17(11):661--669, 2001.
+
+\bibitem{bailey2006primate}
+J.A. Bailey and E.E. Eichler.
+\newblock Primate segmental duplications: crucibles of evolution, diversity and
+  disease.
+\newblock {\em Nature Reviews Genetics}, 7(7):552--564, 2006.
+
+\bibitem{jiang2007ancestral}
+Zhaoshi Jiang, Haixu Tang, Mario Ventura, Maria~Francesca Cardone, Tomas
+  Marques-Bonet, Xinwei She, Pavel~A Pevzner, and Evan~E Eichler.
+\newblock Ancestral reconstruction of segmental duplications reveals punctuated
+  cores of human genome evolution.
+\newblock {\em Nature genetics}, 39(11):1361--1368, 2007.
+
+\bibitem{samonte2002segmental}
+Rhea~Vallente Samonte and Evan~E Eichler.
+\newblock Segmental duplications and the evolution of the primate genome.
+\newblock {\em Nature Reviews Genetics}, 3(1):65--72, 2002.
+
+\bibitem{bailey2002human}
+Jeffrey~A Bailey, Amy~M Yavor, Luigi Viggiano, Doriana Misceo, Juliann~E
+  Horvath, Nicoletta Archidiacono, Stuart Schwartz, Mariano Rocchi, and Evan~E
+  Eichler.
+\newblock Human-specific duplication and mosaic transcripts: the recent
+  paralogous structure of chromosome 22.
+\newblock {\em The American Journal of Human Genetics}, 70(1):83--100, 2002.
+
+\bibitem{pevzner2004}
+Paul~A Pevzner, Haixu Tang, and Glenn Tesler.
+\newblock De novo repeat classification and fragment assembly.
+\newblock {\em Genome Research}, 14(9):1786--1796, 2004.
+
+\bibitem{lee2007dna}
+Jennifer~A Lee, Claudia Carvalho, and James~R Lupski.
+\newblock A dna replication mechanism for generating nonrecurrent
+  rearrangements associated with genomic disorders.
+\newblock {\em Cell}, 131(7):1235--1247, 2007.
+
+\bibitem{liu2011chromosome}
+Pengfei Liu, Ayelet Erez, Sandesh C~Sreenath Nagamani, Shweta~U Dhar,
+  Katarzyna~E Ko{\l}odziejska, Avinash~V Dharmadhikari, M~Lance Cooper, Joanna
+  Wiszniewska, Feng Zhang, Marjorie~A Withers, et~al.
+\newblock Chromosome catastrophes involve replication mechanisms generating
+  complex genomic rearrangements.
+\newblock {\em Cell}, 146(6):889--903, 2011.
+
+\bibitem{pinkel2005array}
+Daniel Pinkel and Donna~G Albertson.
+\newblock Array comparative genomic hybridization and its applications in
+  cancer.
+\newblock {\em Nature genetics}, 37:S11--S17, 2005.
+
+\bibitem{slack2006mechanism}
+Andrew Slack, PC~Thornton, Daniel~B Magner, Susan~M Rosenberg, and PJ~Hastings.
+\newblock On the mechanism of gene amplification induced under stress in
+  escherichia coli.
+\newblock {\em PLoS genetics}, 2(4):e48, 2006.
+
+\bibitem{hastings2009microhomology}
+PJ~Hastings, Grzegorz Ira, and James~R Lupski.
+\newblock A microhomology-mediated break-induced replication model for the
+  origin of human copy number variation.
+\newblock {\em PLoS genetics}, 5(1):e1000327, 2009.
+
+\bibitem{gu2008mechanisms}
+Wenli Gu, Feng Zhang, and James~R Lupski.
+\newblock Mechanisms for human genomic rearrangements.
+\newblock {\em Pathogenetics}, 1(1):4, 2008.
+
+\bibitem{lander2001}
+Eric~S Lander, Lauren~M Linton, Bruce Birren, Chad Nusbaum, Michael~C Zody,
+  Jennifer Baldwin, Keri Devon, Ken Dewar, Michael Doyle, William FitzHugh,
+  et~al.
+\newblock Initial sequencing and analysis of the human genome.
+\newblock {\em Nature}, 409(6822):860--921, 2001.
+
+\bibitem{cordaux2009}
+Richard Cordaux and Mark~A Batzer.
+\newblock The impact of retrotransposons on human genome evolution.
+\newblock {\em Nature Reviews Genetics}, 10(10):691--703, 2009.
+
+\bibitem{carvalho2011inverted}
+Claudia~MB Carvalho, Melissa~B Ramocki, Davut Pehlivan, Luis~M Franco, Claudia
+  Gonzaga-Jauregui, Ping Fang, Alanna McCall, Eniko~Karman Pivnick, Stacy
+  Hines-Dowell, Laurie~H Seaver, et~al.
+\newblock Inverted genomic segments and complex triplication rearrangements are
+  mediated by inverted repeats in the human genome.
+\newblock {\em Nature genetics}, 43(11):1074--1081, 2011.
+
+\bibitem{spades}
+Anton Bankevich, Sergey Nurk, Dmitry Antipov, Alexey~A Gurevich, Mikhail
+  Dvorkin, Alexander~S Kulikov, Valery~M Lesin, Sergey~I Nikolenko, Son Pham,
+  Andrey~D Prjibelski, et~al.
+\newblock Spades: A new genome assembly algorithm and its applications to
+  single-cell sequencing.
+\newblock {\em J.\ Comput.\ Biol.}, 19(5):455--477, 2012.
+
+\bibitem{bafna1993}
+V.~Bafna and P.A. Pevzner.
+\newblock Genome rearrangements and sorting by reversals.
+\newblock In {\em Proc.\ 34th Ann.\ IEEE Symp.\ Foundations of Comput. Sci.\
+  ({FOCS'93})}, pages 148--157, 1993.
+
+\bibitem{alekseyev2009}
+Max~A Alekseyev and Pavel~A Pevzner.
+\newblock Breakpoint graphs and ancestral genome reconstructions.
+\newblock {\em Genome Research}, 19(5):943--957, 2009.
+
+\bibitem{pevzner1989}
+P.A. Pevzner.
+\newblock l-tuple dna sequencing: computer analysis.
+\newblock {\em J. Biomol. Struct. Dyn.}, 7:63--73, 1989.
+
+\bibitem{idury1995}
+R.M. Idury and M.S. Waterman.
+\newblock A new algorithm for dna sequence assembly.
+\newblock {\em J.\ Comput.\ Biol.}, 2(2):291--306, 1995.
+
+\bibitem{pevzner2001eulerian}
+P.A. Pevzner, H.~Tang, and M.S. Waterman.
+\newblock An eulerian path approach to dna fragment assembly.
+\newblock {\em Proc.\ Nat'l Acad.\ Sci., USA}, 98(17):9748, 2001.
+
+\bibitem{medvedev2007}
+Paul Medvedev, Konstantinos Georgiou, Gene Myers, and Michael Brudno.
+\newblock Computability of models for sequence assembly.
+\newblock In {\em Proc.\ 7th Workshop Algs.\ in Bioinf.\ ({WABI'07})}, volume
+  4645 of {\em Lecture Notes in Comp.\ Sci.}, pages 289--301. Springer, 2007.
+
+\end{thebibliography}

@@ -1,0 +1,787 @@
+@STRING{pami  = "IEEE Trans.\ on Pattern Analysis and Machine Intelligence"}
+@STRING{comp  = "IEEE Trans.\ on Computers"}
+@STRING{ip    = "IEEE Trans.\ on Image Processing"}
+@STRING{pds   = "IEEE Trans.\ on Parallel and Distributed Systems"}
+@STRING{assp  = "IEEE Trans.\ on Acoustics, Speech, and Signal Processing"}
+@STRING{smc   = "IEEE Trans.\ on Systems, Man, and Cybernetics"}
+@STRING{it    = "IEEE Trans.\ on Information Theory"}
+@STRING{tgrs  = "IEEE Trans.\ on Geoscience and Remote Sensing"}
+@STRING{icom  = "IEEE Computer"}
+@STRING{pdt   = "IEEE Parallel \& Distributed Technology"}
+@STRING{cse   = "IEEE Computational Science \& Engineering"}
+@STRING{jpdc  = "J.\ Parallel and Distributed Comput."}
+@STRING{pc    = "Parallel Computing"}
+@STRING{ijsa  = "Int'l J.\ Supercomputer Applications"}
+@STRING{jas   = "J.\ Applied Statistics"}
+@STRING{cacm  = "Communications of the ACM"}
+@STRING{cgip  = "Computer Graphics and Image Processing"}
+@STRING{cvgip = "Computer Vision, Graphics, and Image Processing"}
+@STRING{pr    = "Pattern Recognition"}
+@STRING{jea   = "{ACM} J.\ Experimental Algorithmics"}
+@STRING{ijrs  = "Int'l J.\ Remote Sensing"}
+@STRING{pers  = "Photogrammetic Engineering \& Remote Sensing"}
+@STRING{sysbio  = "Syst.\ Biol."}
+@STRING{sysbot  = "Syst.\ Bot."}
+@STRING{syszoo  = "Syst.\ Zool."}
+@STRING{evol    = "Evol."}
+@STRING{mbe  = "Mol.\ Biol.\ Evol."}
+@STRING{mpe  = "Mol.\ Phys.\ Evol."}
+@STRING{mphe = "Mol.\ Phyl.\ Evol."}
+@STRING{ipl  = "Inf.\ Proc.\ Letters"}
+@STRING{jme  = "J.\ Mol.\ Evol."}
+@STRING{jmb  = "J.\ Mol.\ Biol."}
+@STRING{jcb  = "J.\ Comput.\ Biol."}
+@STRING{jco  = "J.\ of Combin.\ Optimization"}
+@STRING{jcss = "J.\ Comput.\ Syst.\ Sci."}
+@STRING{jalgs = "J.\ Algorithms"}
+@STRING{tcbb = "ACM/IEEE Trans.\ on Comput.\ Bio.\ \&\ Bioinf."}
+@STRING{dam = "Disc.\ Appl.\ Math."},
+@STRING{tee  = "Trends in Ecol.\ and Evol."}
+@STRING{amjbot = "Amer.\ J.\ Bot."}
+@STRING{pse    = "Plant Syst.\ \& Evol."}
+@STRING{stoc95 = "Proc.\ 27th Ann.\ {ACM} Symp.\ Theory of Comput.\ ({STOC'95})"},
+@STRING{stoc01 = "Proc.\ 33rd Ann.\ {ACM} Symp.\ Theory of Comput.\ ({STOC'01})"},
+@STRING{stoc02 = "Proc.\ 34th Ann.\ {ACM} Symp.\ Theory of Comput.\ ({STOC'02})"},
+@STRING{stoc03 = "Proc.\ 35th Ann.\ {ACM} Symp.\ Theory of Comput.\ ({STOC'03})"},
+@STRING{focs93 = "Proc.\ 34th Ann.\ IEEE Symp.\ Foundations of Comput. Sci.\ ({FOCS'93})"},
+@STRING{focs95 = "Proc.\ 36th Ann.\ IEEE Symp.\ Foundations of Comput. Sci.\ ({FOCS'95})"},
+@STRING{focs98 = "Proc.\ 39th Ann.\ IEEE Symp.\ Foundations of Comput. Sci.\ ({FOCS'98})"},
+@STRING{cpm92 = "Proc.\ 3rd Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'92})"},
+@STRING{cpm99 = "Proc.\ 10th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'99})"},
+@STRING{cpm00 = "Proc.\ 11th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'00})"},
+@STRING{cpm01 = "Proc.\ 12th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'01})"},
+@STRING{cpm02 = "Proc.\ 13th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'02})"},
+@STRING{cpm03 = "Proc.\ 14th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'03})"},
+@STRING{cpm04 = "Proc.\ 15th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'04})"},
+@STRING{cpm05 = "Proc.\ 16th Ann.\ Symp.\ Combin.\ Pattern Matching ({CPM'05})"},
+@STRING{soda95 = "Proc.\ 6th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'95})"}
+@STRING{soda96 = "Proc.\ 7th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'96})"}
+@STRING{soda97 = "Proc.\ 8th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'97})"}
+@STRING{soda98 = "Proc.\ 9th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'98})"}
+@STRING{soda99 = "Proc.\ 10th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'99})"}
+@STRING{soda00 = "Proc.\ 11th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'00})"}
+@STRING{soda01 = "Proc.\ 12th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'01})"}
+@STRING{soda02 = "Proc.\ 13th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'02})"}
+@STRING{soda03 = "Proc.\ 14th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'03})"}
+@STRING{soda04 = "Proc.\ 15th Ann.\ {ACM/SIAM} Symp.\ Discrete Algs.\ ({SODA'04})"}
+@STRING{alenex05 = "Proc.\ 7th SIAM Workshop on Algorithm Engineering \& Experiments ({ALENEX'05})"}
+@STRING{ismb98 = "Proc.\ 6th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'98})"},
+@STRING{ismb99 = "Proc.\ 7th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'99})"},
+@STRING{ismb00 = "Proc.\ 8th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'00})"},
+@STRING{ismb01 = "Proc.\ 9th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'01})"},
+@STRING{ismb02 = "Proc.\ 10th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'02})"},
+@STRING{ismb03 = "Proc.\ 11th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'03})"},
+@STRING{ismb04 = "Proc.\ 12th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'04})"},
+@STRING{ismb08 = "Proc.\ 16th Int'l Conf.\ on Intelligent Systems for Mol.\ Biol.\ ({ISMB'08})"},
+@STRING{psb00 = "Proc.\ 5th Pacific Symp.\ on Biocomputing ({PSB'00})"},
+@STRING{psb01 = "Proc.\ 6th Pacific Symp.\ on Biocomputing ({PSB'01})"},
+@STRING{psb02 = "Proc.\ 7th Pacific Symp.\ on Biocomputing ({PSB'02})"},
+@STRING{psb03 = "Proc.\ 8th Pacific Symp.\ on Biocomputing ({PSB'03})"},
+@STRING{psb04 = "Proc.\ 9th Pacific Symp.\ on Biocomputing ({PSB'04})"},
+@STRING{psb05 = "Proc.\ 10th Pacific Symp.\ on Biocomputing ({PSB'05})"},
+@STRING{csb04 = "Proc.\ 3rd IEEE Comp.\ Systems Bioinf.\ Conf.\ {CSB'04}"},
+@STRING{recomb97 = "Proc.\ 1st Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'97})"},
+@STRING{recomb98 = "Proc.\ 2nd Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'98})"},
+@STRING{recomb99 = "Proc.\ 3rd Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'99})"},
+@STRING{recomb00 = "Proc.\ 4th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'00})"},
+@STRING{recomb01 = "Proc.\ 5th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'01})"},
+@STRING{recomb02 = "Proc.\ 6th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'02})"},
+@STRING{recomb03 = "Proc.\ 7th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'03})"},
+@STRING{recomb04 = "Proc.\ 8th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'04})"},
+@STRING{recomb05 = "Proc.\ 9th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'05})"},
+@STRING{recomb09 = "Proc.\ 13th Int'l Conf.\ Comput.\ Mol.\ Biol.\ ({RECOMB'09})"},
+@STRING{recombcg05 = "Proc.\ 3rd RECOMB Workshop Comp.\ Genomics ({RECOMB-CG'05})"},
+@STRING{recombcg06 = "Proc.\ 4th RECOMB Workshop Comp.\ Genomics ({RECOMB-CG'06})"},
+@STRING{recombcg08 = "Proc. 6th RECOMB Work. on Comp. Genomics ({RECOMBCG'08}). Lecture Notes in Computer Science 5267"},
+@STRING{recombcg09 = "Proc.\ 7th RECOMB Workshop Comp.\ Genomics ({RECOMB-CG'09})"},
+
+@STRING{cibcb07 = "Proc.\ 9th IEEE Symp.\ Comput.\ Intell.\ in Bioinf.\ \&\ Comput.\ Biol.\ ({CIBCB'07})"},
+@STRING{wae99 = "Proc.\ 3rd Int'l Workshop Alg.\ Engineering ({WAE'99})"},
+@STRING{wabi01 = "Proc.\ 1st Workshop Algs.\ in Bioinf.\ ({WABI'01})"},
+@STRING{wabi02 = "Proc.\ 2nd Workshop Algs.\ in Bioinf.\ ({WABI'02})"},
+@STRING{wabi03 = "Proc.\ 3rd Workshop Algs.\ in Bioinf.\ ({WABI'03})"},
+@STRING{wabi04 = "Proc.\ 4th Workshop Algs.\ in Bioinf.\ ({WABI'04})"},
+@STRING{wabi05 = "Proc.\ 5th Workshop Algs.\ in Bioinf.\ ({WABI'05})"},
+@STRING{wabi06 = "Proc.\ 6th Workshop Algs.\ in Bioinf.\ ({WABI'06})"},
+@STRING{wabi07 = "Proc.\ 7th Workshop Algs.\ in Bioinf.\ ({WABI'07})"},
+@STRING{wabi08 = "Proc.\ 8th Workshop Algs.\ in Bioinf.\ ({WABI'08})"},
+@STRING{wabi09 = "Proc.\ 9th Workshop Algs.\ in Bioinf.\ ({WABI'09})"},
+@STRING{wads99 = "Proc.\ 6th Workshop on Algs.\ and Data Structures ({WADS'99})"},
+@STRING{wads01 = "Proc.\ 7th Workshop on Algs.\ and Data Structures ({WADS'01})"},
+@STRING{wads03 = "Proc.\ 8th Workshop on Algs.\ and Data Structures ({WADS'03})"},
+@STRING{cocoon97= "Proc.\ 3rd Conf.\ Computing and Combinatorics ({COCOON'97})"},
+@STRING{cocoon03= "Proc.\ 9th Conf.\ Computing and Combinatorics ({COCOON'03})"},
+@STRING{cocoon05= "Proc.\ 11th Conf.\ Computing and Combinatorics ({COCOON'05})"},
+@STRING{cocoon10= "Proc.\ 16th Conf.\ Computing and Combinatorics ({COCOON'10})"},
+@STRING{bibe03 = "Proc.\ 3rd IEEE Symp.\ on Bioinformatics and Bioengineering {BIBE'03}"},
+@STRING{bibe04 = "Proc.\ 4th IEEE Symp.\ on Bioinformatics and Bioengineering {BIBE'04}"},
+@STRING{bibe05 = "Proc.\ 5th IEEE Symp.\ on Bioinformatics and Bioengineering {BIBE'06}"},
+@STRING{apbc05 = "Proc.\ 3rd Asia Pacific Bioinf.\ Conf.\ ({APBC'05})"},
+@STRING{apbc09 = "Proc.\ 7th Asia Pacific Bioinf.\ Conf.\ ({APBC'09})"},
+@STRING{apbc10 = "Proc.\ 8th Asia Pacific Bioinf.\ Conf.\ ({APBC'10})"},
+@STRING{pnas  = "Proc.\ Nat'l Acad.\ Sci., USA"}
+@STRING{PNAS  = "Proc.\ Nat'l Acad.\ Sci., USA"}
+@STRING{tcs   = "Theor.\ Comput.\ Sci."}
+@STRING{jacm  = "J. {ACM}"}
+@STRING{cacm  = "Commun. ACM"}
+@STRING{jea   = "{ACM} J. Experimental Algorithmics"}
+@STRING{jbcb  = "J.\ Bioinf.\ Comp.\ Bio."}
+@STRING{JOBIM = "JOBIM"}
+
+@STRING{lncs  = "Lecture Notes in Comp.\ Sci."}
+@STRING{LNCS  = "Lecture Notes in Comp.\ Sci."}
+
+@STRING{springer = "Springer Verlag, Berlin"}
+@STRING{ams   = "{AMS Press, New York}"}
+@STRING{pws  = "PWS Publishers, Boston, MA"}
+@STRING{acm   = "{ACM Press, New York}"}
+@STRING{siam   = "{SIAM Press, Philadelphia}"}
+@STRING{ieee  = "{IEEE Press}, Piscataway, NJ"}
+@STRING{acad  = "Academic Press, Inc."}
+@STRING{sinauer  = "Sinauer Assoc., Sunderland, MA"}
+@STRING{mitpress  = "{MIT} Press, Inc."}
+@STRING{kluwer  = "Kluwer Academic Publishers, Dordrecht, NL"}
+@STRING{cup   = "Cambridge University Press, UK"}
+@STRING{oup   = "Oxford Univ.\ Press, UK"}
+
+@inproceedings{sankoff1992edit,
+  title = "Edit distance for genome comparison based on non-local operations",
+  author = "D. Sankoff",
+  booktitle = cpm92,
+  series = lncs,
+  volume = 644,
+  pages = "121--135",
+  year = 1992,
+  publisher = springer,
+}
+
+@incollection{moret2005advances,
+  author = "B.M.E. Moret and T. Warnow",
+  title = "Advances in phylogeny reconstruction from gene order and content data",
+  booktitle = "Molecular Evolution: Producing the Biochemical Data, Part B",
+  editor = "E.A. Zimmer and E.H. Roalson",
+  series = "Methods in Enzymology",
+  publisher = "Elsevier",
+  volume = 395,
+  pages = "673--700",
+  year = 2005,
+}
+
+@book{fertin2009combinatorics,
+  title = {Combinatorics of Genome Rearrangements},
+  author = "G. Fertin and A. Labarre and I. Rusu and E. Tannier and S. Vialette",
+  publisher = "MIT Press",
+  year = 2009,
+}
+
+
+@inproceedings{bergeron2006unifying,
+  author    = {A. Bergeron and J. Mixtacki and J. Stoye},
+  title     = {A unifying view of genome rearrangements},
+  booktitle = wabi06,
+  series    = lncs,
+  volume    = 4175,
+  publisher = springer,
+  year      = {2006},
+  pages     = {163--173},
+}
+
+@article{chen2005assignment,
+  title={Assignment of orthologous genes via genome rearrangement},
+  author={Chen, X. and Zheng, J. and Fu, Z. and Nan, P. and Zhong, Y. and Lonardi, S. and Jiang, T.},
+  journal = tcbb,
+  pages = {302--315},
+  volume={2},
+  number={4},
+  year = 2005,
+}
+
+@inproceedings{hannenhalli1995transforming,
+   author    = "S. Hannenhalli and P.A. Pevzner",
+   title     = "Transforming cabbage into turnip (polynomial algorithm for sorting signed permutations by reversals)",
+   booktitle = stoc95,
+   pages     = "178--189",
+   year      = 1995,
+   publisher = acm,
+}
+
+@article{yancopoulos2005efficient,
+  author  = "S. Yancopoulos and O. Attie and R. Friedberg",
+  title   = "Efficient sorting of genomic permutations by translocation, inversion and block interchange",
+  journal = "Bioinformatics",
+  volume  = 21,
+  number  = 16,
+  pages   = "3340--3346",
+  year    = 2005,
+}
+
+
+@inproceedings{moret2001new,
+  author = "B.M.E. Moret and S.K. Wyman and D.A. Bader and T. Warnow and M. Yan",
+  title = "A new implementation and detailed study of breakpoint analysis",
+  booktitle = psb01,
+  publisher = "World Scientific Pub.",
+  year = "2001",
+  pages = "583--594"
+}
+
+@article{tesler2002efficient,
+  author = "G. Tesler",
+  title  = "Efficient algorithms for multichromosomal genome rearrangements",
+  journal = jcss,
+  volume = 65,
+  number = 3,
+  year = 2002,
+  pages = "587--609",
+}
+
+@article{ozery2003two,
+  title={Two notes on genome rearrangement},
+  author={Ozery-Flato, M. and Shamir, R.},
+  journal=jbcb,
+  volume=1,
+  number=1,
+  pages={71--94},
+  year=2003,
+}
+
+@article{jean2007genome,
+  title={Genome rearrangements: a correct algorithm for optimal capping},
+  author={Jean, G. and Nikolski, M.},
+  journal=ipl,
+  volume=104,
+  number=1,
+  pages={14--20},
+  year=2007,
+}
+
+
+@article{bergeron2009new,
+  title={A new linear-time algorithm to compute the genomic distance via the double cut and join distance},
+  author={Bergeron, A. and Mixtacki, J. and Stoye, J.},
+  journal=tcs,
+  volume={410},
+  number={51},
+  pages={5300--5316},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@inproceedings{chen2010sorting,
+  title={On sorting permutations by double-cut-and-joins},
+  author={Chen, X.},
+  booktitle = cocoon10,
+  series = lncs,
+  volume = 6196,
+  publisher = springer,
+  pages = "439--448",
+  year = 2010,
+}
+
+@article{kececioglu1995exact,
+  title={Exact and approximation algorithms for sorting by reversals, with application to genome rearrangement},
+  author={Kececioglu, J. and Sankoff, D.},
+  journal={Algorithmica},
+  volume=13,
+  number=1,
+  pages={180--210},
+  year=1995,
+}
+
+@article{bafna1996genome,
+  title={Genome rearrangements and sorting by reversals},
+  author={Bafna, V. and Pevzner, P.A.},
+  journal={SIAM J.\ on Computing},
+  volume={25},
+  pages={272--289},
+  year={1996}
+}
+
+@inproceedings{christie19983,
+  title={A 3/2-approximation algorithm for sorting by reversals},
+  author={Christie, D.A.},
+  booktitle=soda98,
+  pages={244--252},
+  year={1998},
+  publisher=siam,
+}
+
+@article{caprara2002improved,
+  title={Improved approximation for breakpoint graph decomposition and sorting by reversals},
+  author={Caprara, A. and Rizzi, R.},
+  journal=jco,
+  volume=6,
+  number=2,
+  pages={157--182},
+  year=2002,
+}
+
+@article{lin2004further,
+  title={A further improved approximation algorithm for breakpoint graph decomposition},
+  author={Lin, G. and Jiang, T.},
+  journal=jco,
+  volume=8,
+  number=2,
+  pages={183--194},
+  year=2004,
+}
+@article{xin12approximating,
+	AUTHOR = {X. Chen and R. Sun and J. Yu},
+	TITLE = {Approximating the double-cut-and-join distance between unsigned genomes},
+	JOURNAL = {BMC Bioinformatics},
+	VOLUME = {12},
+	YEAR = {2011},
+	NUMBER = {Suppl 9},
+	PAGES = {S17}
+}
+
+
+@inproceedings{halldorsson1995approximating,
+	title={Approximating discrete collections via local improvements},
+	author={Halld{\'o}rsson, M.M.},
+	booktitle={Proceedings of the sixth annual ACM-SIAM symposium on Discrete algorithms},
+	pages={160--169},
+	year={1995},
+	organization={Society for Industrial and Applied Mathematics}
+}
+@article{hurkens1989size,
+	title={On the size of systems of sets every t of which have an SDR, with an application to the worst-case ratio of heuristics for packing problems},
+	author={Hurkens, C.A.J. and Schrijver, A.},
+	journal={SIAM Journal on Discrete Mathematics},
+	volume={2},
+	number={1},
+	pages={68--72},
+	year={1989}
+}
+@article{jiang2011algorithms,
+	title={Algorithms for sorting unsigned linear genomes by the DCJ operations},
+	author={Jiang, H. and Zhu, B. and Zhu, D.},
+	journal={Bioinformatics},
+	volume={27},
+	number={3},
+	pages={311--316},
+	year={2011},
+	publisher={Oxford Univ Press}
+}
+@article{braga2010genomic,
+	title={Genomic distance with DCJ and indels},
+	author={Braga, M. and Willing, E. and Stoye, J.},
+	journal={Algorithms in Bioinformatics},
+	pages={90--101},
+	year={2010},
+	publisher={springer}
+}
+@inproceedings{caprara1997sorting,
+	title={Sorting by reversals is difficult},
+	author={Caprara, A.},
+	booktitle={Proceedings of the first annual international conference on Computational molecular biology},
+	pages={75--83},
+	year={1997},
+	organization={ACM}
+}
+
+@article{berman20021,
+  title={1.375-approximation algorithm for sorting by reversals},
+  author={Berman, P. and Hannenhalli, S. and Karpinski, M.},
+  journal={Algorithms—ESA 2002},
+  pages={401--408},
+  year={2002},
+  publisher={springer}
+}
+@article{el2001sorting,
+	title={Sorting signed permutations by reversals and insertions/deletions of contiguous segments},
+	author={El-Mabrouk, N.},
+	journal={Journal of Discrete Algorithms},
+	volume={1},
+	number={1},
+	pages={105--122},
+	year={2001}
+}
+
+@article{York2007,
+	author = "T.L. York and R. Durrett and R. Nielsen",
+	title = "Dependence of paracentric inversion rate on tract length",
+	journal = "{BMC} Bioinformatics",
+	volume = 8,
+	number = 115,
+	year = 2007,
+}
+@inproceedings{Lefebvre2003,
+	author = "J.-F. Lefebvre and N. El-Mabrouk and E.R.M. Tillier and D. Sankoff",
+	title = "Detection and validation of single gene inversions",
+	booktitle = ismb03,
+	series = "Bioinformatics",
+	publisher = "Oxford U.\ Press",
+	year   =  2003,
+	volume = 19,
+	pages  = "i190--i196",
+}
+
+
+@article{bailey2006primate,
+	title={Primate segmental duplications: crucibles of evolution, diversity and disease},
+	author={Bailey, J.A. and Eichler, E.E.},
+	journal={Nature Reviews Genetics},
+	volume={7},
+	number={7},
+	pages={552--564},
+	year={2006},
+	publisher={Nature Publishing Group}
+}
+@article{BMY,
+	author = "D.A. Bader and B.M.E. Moret and M. Yan",
+	title = "A fast linear-time algorithm for inversion distance with an
+		experimental comparison",
+	journal = "J. Comput. Biol.",
+	volume = 8,
+	number = 5,
+	pages = "483--491",
+	year = 2001,
+}
+
+@inproceedings{SwensonF,
+	author = "K.M. Swenson and N.D. Pattengale and B.M.E. Moret",
+	title = "A framework for orthology assignment from gene rearrangement data",
+	booktitle = recombcg05,
+	publisher = springer,
+	pages = "153--166",
+	year = 2005,
+}
+
+@article{yancopoulos2008sorting,
+	title={Sorting genomes with insertions, deletions and duplications by {DCJ}},
+	author={Yancopoulos, S. and Friedberg, R.},
+	journal=recombcg08,
+	pages={170--183},
+	year={2008},
+	publisher={springer}
+}
+
+@article{sankoff1995,
+	title={Exact and approximation algorithms for sorting by reversals, with application to genome rearrangement},
+	author={Kececioglu, J. and Sankoff, D.},
+	journal={Algorithmica},
+	volume={13},
+	number={1},
+	pages={180--210},
+	year={1995},
+	publisher={Springer}
+}
+
+@article{angibaud2009,
+	title={On the approximability of comparing genomes with duplicates},
+	author={Angibaud, S. and Fertin, G. and Rusu, I. and Th{\'e}venin, A. and Vialette, S. and others},
+	journal={Journal of Graph Algorithms and Applications},
+	volume={13},
+	number={1},
+	pages={19--53},
+	year={2009}
+}
+
+@article{angibaud2007,
+	title={A pseudo-boolean framework for computing rearrangement distances between genomes with duplicates},
+	author={Angibaud, S. and Fertin, G. and Rusu, I. and Vialette, S.},
+	journal={jcb},
+	volume={14},
+	number={4},
+	pages={379--393},
+	year={2007},
+	publisher={Mary Ann Liebert, Inc. 2 Madison Avenue Larchmont, NY 10538 USA}
+}
+
+@article{shao2012,
+	AUTHOR = {Shao, Mingfu and Lin, Yu},
+	TITLE = {Approximating the edit distance for genomes with duplicate genes under {DCJ}, insertion and deletion},
+	JOURNAL = {BMC Bioinformatics},
+	VOLUME = {13},
+	YEAR = {2012},
+	NUMBER = {Suppl 19},
+	PAGES = {S13},
+}
+
+@article{bafna1996genome,
+  title={Genome rearrangements and sorting by reversals},
+  author={Bafna, Vineet and Pevzner, Pavel A},
+  journal={SIAM Journal on Computing},
+  volume={25},
+  number={2},
+  pages={272--289},
+  year={1996},
+  publisher={SIAM}
+}
+
+@article{bailey2006primate,
+  title={Primate segmental duplications: crucibles of evolution, diversity and disease},
+  author={Bailey, Jeffrey A and Eichler, Evan E},
+  journal={Nature Reviews Genetics},
+  volume={7},
+  number={7},
+  pages={552--564},
+  year={2006},
+  publisher={Nature Publishing Group}
+}
+
+@article{jiang2007ancestral,
+  title={Ancestral reconstruction of segmental duplications reveals punctuated cores of human genome evolution},
+  author={Jiang, Zhaoshi and Tang, Haixu and Ventura, Mario and Cardone, Maria Francesca and Marques-Bonet, Tomas and She, Xinwei and Pevzner, Pavel A and Eichler, Evan E},
+  journal={Nature genetics},
+  volume={39},
+  number={11},
+  pages={1361--1368},
+  year={2007},
+  publisher={Nature Publishing Group}
+}
+
+@article{kahn2008analysis,
+  title={Analysis of segmental duplications via duplication distance},
+  author={Kahn, Crystal L and Raphael, Benjamin J},
+  journal={Bioinformatics},
+  volume={24},
+  number={16},
+  pages={i133--i138},
+  year={2008},
+  publisher={Oxford Univ Press}
+}
+
+@article{kahn2010parsimony,
+  title={Parsimony and likelihood reconstruction of human segmental duplications},
+  author={Kahn, Crystal L and Hristov, Borislav H and Raphael, Benjamin J},
+  journal={Bioinformatics},
+  volume={26},
+  number={18},
+  pages={i446--i452},
+  year={2010},
+  publisher={Oxford Univ Press}
+}
+
+@inproceedings{bafna1993,
+author={Bafna, V. and Pevzner, P.A.},
+booktitle=focs93,
+title={Genome rearrangements and sorting by reversals},
+year={1993},
+pages={148-157},
+}
+
+@book{Lynch,
+ title      = "The Origins of Genome Architecture",
+ author     = "M. Lynch",
+ publisher  = "Sinauer",
+ year       = 2007,
+}
+
+@article{eichler2001,
+  title={Recent duplication, domain accretion and the dynamic mutation of the human genome},
+  author={Eichler, Evan E},
+  journal={TRENDS in Genetics},
+  volume={17},
+  number={11},
+  pages={661--669},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@article{alekseyev2009,
+  title={Breakpoint graphs and ancestral genome reconstructions},
+  author={Alekseyev, Max A and Pevzner, Pavel A},
+  journal={Genome Research},
+  volume={19},
+  number={5},
+  pages={943--957},
+  year={2009},
+  publisher={Cold Spring Harbor Lab}
+}
+
+@article{pevzner2004,
+  title={De novo repeat classification and fragment assembly},
+  author={Pevzner, Paul A and Tang, Haixu and Tesler, Glenn},
+  journal={Genome Research},
+  volume={14},
+  number={9},
+  pages={1786--1796},
+  year={2004},
+  publisher={Cold Spring Harbor Lab}
+}
+
+@article{lander2001,
+  title={Initial sequencing and analysis of the human genome},
+  author={Lander, Eric S and Linton, Lauren M and Birren, Bruce and Nusbaum, Chad and Zody, Michael C and Baldwin, Jennifer and Devon, Keri and Dewar, Ken and Doyle, Michael and FitzHugh, William and others},
+  journal={Nature},
+  volume={409},
+  number={6822},
+  pages={860--921},
+  year={2001},
+  publisher={Nature Publishing Group}
+}
+
+@article{cordaux2009,
+  title={The impact of retrotransposons on human genome evolution},
+  author={Cordaux, Richard and Batzer, Mark A},
+  journal={Nature Reviews Genetics},
+  volume={10},
+  number={10},
+  pages={691--703},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
+
+@article{spades,
+  title={Spades: A new genome assembly algorithm and its applications to single-cell sequencing},
+  author={Bankevich, Anton and Nurk, Sergey and Antipov, Dmitry and Gurevich, Alexey A and Dvorkin, Mikhail and Kulikov, Alexander S and Lesin, Valery M and Nikolenko, Sergey I and Pham, Son and Prjibelski, Andrey D and others},
+  journal=jcb,
+  volume={19},
+  number={5},
+  pages={455--477},
+  year={2012},
+  publisher={Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}
+}
+
+
+@inproceedings{medvedev2007,
+  title={Computability of models for sequence assembly},
+  author={Medvedev, Paul and Georgiou, Konstantinos and Myers, Gene and Brudno, Michael},
+  booktitle=wabi07,
+  series    = lncs,
+  volume    = 4645,
+  pages={289--301},
+  year={2007},
+  publisher={Springer}
+}
+
+
+@article{idury1995,
+  title={A new algorithm for DNA sequence assembly},
+  author={Idury, R.M. and Waterman, M.S.},
+  journal=jcb,
+  volume={2},
+  number={2},
+  pages={291--306},
+  year={1995}
+}
+
+@article{pevzner2001eulerian,
+  title={An Eulerian path approach to DNA fragment assembly},
+  author={Pevzner, P.A. and Tang, H. and Waterman, M.S.},
+  journal=pnas,
+  volume={98},
+  number={17},
+  pages={9748},
+  year={2001},
+  publisher={National Acad Sciences}
+}
+
+@article{bailey2002human,
+  title={Human-specific duplication and mosaic transcripts: the recent paralogous structure of chromosome 22},
+  author={Bailey, Jeffrey A and Yavor, Amy M and Viggiano, Luigi and Misceo, Doriana and Horvath, Juliann E and Archidiacono, Nicoletta and Schwartz, Stuart and Rocchi, Mariano and Eichler, Evan E},
+  journal={The American Journal of Human Genetics},
+  volume={70},
+  number={1},
+  pages={83--100},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@article{samonte2002segmental,
+  title={Segmental duplications and the evolution of the primate genome},
+  author={Samonte, Rhea Vallente and Eichler, Evan E},
+  journal={Nature Reviews Genetics},
+  volume={3},
+  number={1},
+  pages={65--72},
+  year={2002},
+  publisher={Nature Publishing Group}
+}
+
+@article{lee2007dna,
+  title={A DNA replication mechanism for generating nonrecurrent rearrangements associated with genomic disorders},
+  author={Lee, Jennifer A and Carvalho, Claudia and Lupski, James R},
+  journal={Cell},
+  volume={131},
+  number={7},
+  pages={1235--1247},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{hastings2009microhomology,
+  title={A microhomology-mediated break-induced replication model for the origin of human copy number variation},
+  author={Hastings, PJ and Ira, Grzegorz and Lupski, James R},
+  journal={PLoS genetics},
+  volume={5},
+  number={1},
+  pages={e1000327},
+  year={2009},
+  publisher={Public Library of Science}
+}
+
+@article{slack2006mechanism,
+  title={On the mechanism of gene amplification induced under stress in Escherichia coli},
+  author={Slack, Andrew and Thornton, PC and Magner, Daniel B and Rosenberg, Susan M and Hastings, PJ},
+  journal={PLoS genetics},
+  volume={2},
+  number={4},
+  pages={e48},
+  year={2006},
+  publisher={Public Library of Science}
+}
+
+
+@article{gu2008mechanisms,
+  title={Mechanisms for human genomic rearrangements},
+  author={Gu, Wenli and Zhang, Feng and Lupski, James R},
+  journal={Pathogenetics},
+  volume={1},
+  number={1},
+  pages={4},
+  year={2008},
+  publisher={BioMed Central Ltd}
+}
+
+
+@article{liu2011chromosome,
+  title={Chromosome catastrophes involve replication mechanisms generating complex genomic rearrangements},
+  author={Liu, Pengfei and Erez, Ayelet and Nagamani, Sandesh C Sreenath and Dhar, Shweta U and Ko{\l}odziejska, Katarzyna E and Dharmadhikari, Avinash V and Cooper, M Lance and Wiszniewska, Joanna and Zhang, Feng and Withers, Marjorie A and others},
+  journal={Cell},
+  volume={146},
+  number={6},
+  pages={889--903},
+  year={2011},
+  publisher={Elsevier}
+}
+
+
+@article{pinkel2005array,
+  title={Array comparative genomic hybridization and its applications in cancer},
+  author={Pinkel, Daniel and Albertson, Donna G},
+  journal={Nature genetics},
+  volume={37},
+  pages={S11--S17},
+  year={2005},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{carvalho2011inverted,
+  title={Inverted genomic segments and complex triplication rearrangements are mediated by inverted repeats in the human genome},
+  author={Carvalho, Claudia MB and Ramocki, Melissa B and Pehlivan, Davut and Franco, Luis M and Gonzaga-Jauregui, Claudia and Fang, Ping and McCall, Alanna and Pivnick, Eniko Karman and Hines-Dowell, Stacy and Seaver, Laurie H and others},
+  journal={Nature genetics},
+  volume={43},
+  number={11},
+  pages={1074--1081},
+  year={2011},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{Pevzner1989,
+  title={l-tuple DNA sequencing: computer analysis},
+  author={Pevzner, P.A. },
+  journal={J. Biomol. Struct. Dyn.},
+  volume={7},
+  pages={63--73},
+  year={1989},
+ 
+}
+
+
+
+
