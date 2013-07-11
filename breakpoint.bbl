@@ -1,0 +1,121 @@
+\begin{thebibliography}{10}
+
+\bibitem{yunis1982origin}
+Jorge~J Yunis and Ora Prakash.
+\newblock The origin of man: a chromosomal pictorial legacy.
+\newblock {\em Science}, 215(4539):1525--1530, 1982.
+
+\bibitem{turleau1983gene}
+Catherine Turleau, Nicole Cr{\'e}au-Goldberg, Chantal Cochet, and J~De~Grouchy.
+\newblock Gene mapping of the gibbon. its position in primate evolution.
+\newblock {\em Human Genetics}, 64(1):65--72, 1983.
+
+\bibitem{jauch1992reconstruction}
+Anna Jauch, Johannes Wienberg, Roscoe Stanyon, N~Arnold, S~Tofanelli, T~Ishida,
+  and Thomas Cremer.
+\newblock Reconstruction of genomic rearrangements in great apes and gibbons by
+  chromosome painting.
+\newblock {\em Proc.\ Nat'l Acad.\ Sci., USA}, 89(18):8611--8615, 1992.
+
+\bibitem{murphy2005dynamics}
+William~J Murphy, Denis~M Larkin, Annelie Everts-van~der Wind, Guillaume
+  Bourque, Glenn Tesler, Loretta Auvil, Jonathan~E Beever, Bhanu~P Chowdhary,
+  Francis Galibert, Lisa Gatzke, et~al.
+\newblock Dynamics of mammalian chromosome evolution inferred from multispecies
+  comparative maps.
+\newblock {\em Science}, 309(5734):613--617, 2005.
+
+\bibitem{carbone2006}
+Lucia Carbone, Gery~M Vessere, Boudewijn~FH ten Hallers, Baoli Zhu, Kazutoyo
+  Osoegawa, Alan Mootnick, Andrea Kofler, Johannes Wienberg, Jane Rogers, Sean
+  Humphray, et~al.
+\newblock A high-resolution map of synteny disruptions in gibbon and human
+  genomes.
+\newblock {\em PLoS genetics}, 2(12):e223, 2006.
+
+\bibitem{wienberg2005}
+J~Wienberg.
+\newblock Fluorescence in situ hybridization to chromosomes as a tool to
+  understand human and primate genome evolution.
+\newblock {\em Cytogenetic and genome research}, 108(1-3):139--160, 2005.
+
+\bibitem{girirajan2009}
+Santhosh Girirajan, Lin Chen, Tina Graves, Tomas Marques-Bonet, Mario Ventura,
+  Catrina Fronick, Lucinda Fulton, Mariano Rocchi, Robert~S Fulton, Richard~K
+  Wilson, et~al.
+\newblock Sequencing human--gibbon breakpoints of synteny reveals mosaic new
+  insertions at rearrangement sites.
+\newblock {\em Genome research}, 19(2):178--190, 2009.
+
+\bibitem{lee2007dna}
+Jennifer~A Lee, Claudia Carvalho, and James~R Lupski.
+\newblock A dna replication mechanism for generating nonrecurrent
+  rearrangements associated with genomic disorders.
+\newblock {\em Cell}, 131(7):1235--1247, 2007.
+
+\bibitem{liu2011chromosome}
+Pengfei Liu, Ayelet Erez, Sandesh C~Sreenath Nagamani, Shweta~U Dhar,
+  Katarzyna~E Ko{\l}odziejska, Avinash~V Dharmadhikari, M~Lance Cooper, Joanna
+  Wiszniewska, Feng Zhang, Marjorie~A Withers, et~al.
+\newblock Chromosome catastrophes involve replication mechanisms generating
+  complex genomic rearrangements.
+\newblock {\em Cell}, 146(6):889--903, 2011.
+
+\bibitem{pinkel2005array}
+Daniel Pinkel and Donna~G Albertson.
+\newblock Array comparative genomic hybridization and its applications in
+  cancer.
+\newblock {\em Nature genetics}, 37:S11--S17, 2005.
+
+\bibitem{slack2006mechanism}
+Andrew Slack, PC~Thornton, Daniel~B Magner, Susan~M Rosenberg, and PJ~Hastings.
+\newblock On the mechanism of gene amplification induced under stress in
+  escherichia coli.
+\newblock {\em PLoS genetics}, 2(4):e48, 2006.
+
+\bibitem{hastings2009microhomology}
+PJ~Hastings, Grzegorz Ira, and James~R Lupski.
+\newblock A microhomology-mediated break-induced replication model for the
+  origin of human copy number variation.
+\newblock {\em PLoS genetics}, 5(1):e1000327, 2009.
+
+\bibitem{gu2008mechanisms}
+Wenli Gu, Feng Zhang, and James~R Lupski.
+\newblock Mechanisms for human genomic rearrangements.
+\newblock {\em Pathogenetics}, 1(1):4, 2008.
+
+\bibitem{lander2001}
+Eric~S Lander, Lauren~M Linton, Bruce Birren, Chad Nusbaum, Michael~C Zody,
+  Jennifer Baldwin, Keri Devon, Ken Dewar, Michael Doyle, William FitzHugh,
+  et~al.
+\newblock Initial sequencing and analysis of the human genome.
+\newblock {\em Nature}, 409(6822):860--921, 2001.
+
+\bibitem{cordaux2009}
+Richard Cordaux and Mark~A Batzer.
+\newblock The impact of retrotransposons on human genome evolution.
+\newblock {\em Nature Reviews Genetics}, 10(10):691--703, 2009.
+
+\bibitem{carvalho2011inverted}
+Claudia~MB Carvalho, Melissa~B Ramocki, Davut Pehlivan, Luis~M Franco, Claudia
+  Gonzaga-Jauregui, Ping Fang, Alanna McCall, Eniko~Karman Pivnick, Stacy
+  Hines-Dowell, Laurie~H Seaver, et~al.
+\newblock Inverted genomic segments and complex triplication rearrangements are
+  mediated by inverted repeats in the human genome.
+\newblock {\em Nature genetics}, 43(11):1074--1081, 2011.
+
+\bibitem{spades}
+Anton Bankevich, Sergey Nurk, Dmitry Antipov, Alexey~A Gurevich, Mikhail
+  Dvorkin, Alexander~S Kulikov, Valery~M Lesin, Sergey~I Nikolenko, Son Pham,
+  Andrey~D Prjibelski, et~al.
+\newblock Spades: A new genome assembly algorithm and its applications to
+  single-cell sequencing.
+\newblock {\em J.\ Comput.\ Biol.}, 19(5):455--477, 2012.
+
+\bibitem{bafna1993}
+V.~Bafna and P.A. Pevzner.
+\newblock Genome rearrangements and sorting by reversals.
+\newblock In {\em Proc.\ 34th Ann.\ IEEE Symp.\ Foundations of Comput. Sci.\
+  ({FOCS'93})}, pages 148--157, 1993.
+
+\end{thebibliography}
